@@ -1,0 +1,62 @@
+<link href="style.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Zen+Dots&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+</style>
+<script src="script.js"></script>
+<body>
+    <section>
+        <header></header>
+            <h1>Sistema de Cadastro</h1>
+        
+        <form action="">
+            <fieldset class="grupo">
+                <div class="campo">
+                    <div class="input-container">
+                        <input class="input" id="name" name="name" pattern=".+" required>
+                        <label class="label" for="name">Nome</label>
+                    </div>
+                    <div class="input-container">
+                        <input class="input" id="surname" name="surname" pattern=".+" required>
+                        <label class="label" for="surname">Sobrenome</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <div class="input-container">
+                    <input class="input" id="email" name="email" type="email" pattern=".+" required>
+                    <label class="label" for="email">E-mail</label>
+                </div>
+                <div class="input-container">
+                    <input class="input" id="cpf" name="cpf" pattern="[0-9]{11}" required>
+                    <label class="label" for="cpf">CPF (Digite apenas Números)</label>
+                </div>
+                <div class="input-container">
+                    <input class="input" id="password" name="password" type="password" pattern=".+" required>
+                    <label class="label" for="password">Senha</label>
+                </div>
+                <!--<div class="input-container">
+                    <label class="file-label" for="file">SELECIONE SUA FOTO</label>
+                    <input type="file" name="file" id="file" accept="image/*">
+                </div> -->
+
+            </div>
+            <button class="button" type="button" onclick="cadastra()">Concluído</button>
+            <button onclick="logar()" class="login-button" type="button">Login</button>
+
+        </form> 
+    </section>
+</body>
+</html>
